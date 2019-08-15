@@ -1,0 +1,290 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2019-08-14T11:50:09.698Z",
+    "end": "2019-08-14T11:50:09.717Z",
+    "duration": 19,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1ca6a739-ebb8-4b72-bc40-a13ddceca145",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d2f5cf0b-0db3-4ec1-b006-8bd36f04383f",
+          "title": "add",
+          "fullFile": "D:\\unitTestNodeJS\\test\\specs\\add.spec.js",
+          "file": "\\test\\specs\\add.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook",
+              "fullTitle": "add \"before each\" hook",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "calculator = new Calculator();\nspy = chai.spy.on(calculator, 'add');",
+              "err": {},
+              "uuid": "22e90e7c-e7c3-4979-ad01-3791255b080a",
+              "parentUUID": "d2f5cf0b-0db3-4ec1-b006-8bd36f04383f",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook",
+              "fullTitle": "add \"after each\" hook",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "calculator = null;",
+              "err": {},
+              "uuid": "390c0914-a66b-4611-9847-a7558aeea8a9",
+              "parentUUID": "d2f5cf0b-0db3-4ec1-b006-8bd36f04383f",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "should return 10 when called with numbers 4,6",
+              "fullTitle": "add should return 10 when called with numbers 4,6",
+              "timedOut": false,
+              "duration": 2,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(calculator.add(4,6)).to.be.equal(10);",
+              "err": {},
+              "uuid": "13d0a31d-4889-4de5-aebb-df3591b3840f",
+              "parentUUID": "d2f5cf0b-0db3-4ec1-b006-8bd36f04383f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should return 5125 when called with numbers 4561, 564",
+              "fullTitle": "add should return 5125 when called with numbers 4561, 564",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(calculator.add(4561, 564)).to.be.equal(5125);",
+              "err": {},
+              "uuid": "3d0fc292-3f6e-4b25-8c35-f63928723d48",
+              "parentUUID": "d2f5cf0b-0db3-4ec1-b006-8bd36f04383f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should throw an error if provided with not number arguments",
+              "fullTitle": "add should throw an error if provided with not number arguments",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "let callWithError = () => calculator.add(\"Not a number\");\nexpect(spy).to.be.a.spy;\nexpect(callWithError).to.throw(\"Some of given parameters are not numbers!\")",
+              "err": {},
+              "uuid": "e82ec55f-00fa-4d6a-bdde-15bad3905561",
+              "parentUUID": "d2f5cf0b-0db3-4ec1-b006-8bd36f04383f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "13d0a31d-4889-4de5-aebb-df3591b3840f",
+            "3d0fc292-3f6e-4b25-8c35-f63928723d48",
+            "e82ec55f-00fa-4d6a-bdde-15bad3905561"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 5000
+        },
+        {
+          "uuid": "57d84054-fe4e-4dfa-ae0d-5d233d3c1dc6",
+          "title": "multiply",
+          "fullFile": "D:\\unitTestNodeJS\\test\\specs\\multiply.spec.js",
+          "file": "\\test\\specs\\multiply.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook",
+              "fullTitle": "multiply \"before each\" hook",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "calculator = new Calculator();\nspy = chai.spy.on(calculator, 'multiply');",
+              "err": {},
+              "uuid": "795d1f00-5ec9-4661-9570-9b8e88ee7443",
+              "parentUUID": "57d84054-fe4e-4dfa-ae0d-5d233d3c1dc6",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook",
+              "fullTitle": "multiply \"after each\" hook",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "calculator = null;",
+              "err": {},
+              "uuid": "c0db10fc-e309-4ee7-beca-9ab5117356a8",
+              "parentUUID": "57d84054-fe4e-4dfa-ae0d-5d233d3c1dc6",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "should return 24 when called with numbers 4,6",
+              "fullTitle": "multiply should return 24 when called with numbers 4,6",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(calculator.multiply(4,6)).to.be.equal(24);",
+              "err": {},
+              "uuid": "64b303c0-3b11-4e0c-9af3-6e97795294b3",
+              "parentUUID": "57d84054-fe4e-4dfa-ae0d-5d233d3c1dc6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should return 2572404 when called with numbers 4561, 564",
+              "fullTitle": "multiply should return 2572404 when called with numbers 4561, 564",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(calculator.multiply(4561, 564)).to.be.equal(2572404);",
+              "err": {},
+              "uuid": "1dfe289a-d1e6-4375-93a2-0d14c2c0b3b7",
+              "parentUUID": "57d84054-fe4e-4dfa-ae0d-5d233d3c1dc6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should throw an error if provided with not number arguments",
+              "fullTitle": "multiply should throw an error if provided with not number arguments",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "let callWithError = () => calculator.multiply(\"Not a number\");\nexpect(spy).to.be.a.spy;\nexpect(callWithError).to.throw(\"Some of given parameters are not numbers!\")",
+              "err": {},
+              "uuid": "8cf8c8d6-0174-44fa-abdc-4cdafed884c5",
+              "parentUUID": "57d84054-fe4e-4dfa-ae0d-5d233d3c1dc6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "64b303c0-3b11-4e0c-9af3-6e97795294b3",
+            "1dfe289a-d1e6-4375-93a2-0d14c2c0b3b7",
+            "8cf8c8d6-0174-44fa-abdc-4cdafed884c5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 5000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 5000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "6.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": null,
+      "version": "4.0.1"
+    }
+  }
+}

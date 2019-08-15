@@ -1,0 +1,31 @@
+{
+  "name": "mocha-unit-testing-homework",
+  "version": "1.0.0",
+  "description": "a simple unit test which is testing calculator using mocha",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-spies": "^1.0.0",
+    "mocha": "^6.2.0",
+    "mochaweome": "^4.0.1",
+    "nyc": "^14.1.1"
+  },
+  "scripts": {
+    "test": "mocha --config ./test/config/mocha.config.js",
+    "covarage": "nyc npm run test"
+  },
+  "nyc": {
+    "all": true,
+    "include": [
+      "app/**/*.js"
+    ],
+    "reporter": [
+      "html",
+      "text"
+    ]
+  },
+  "author": "Lilit Sargsyan",
+  "license": "ISC",
+  "devDependencies": {
+    "mochawesome": "^4.1.0"
+  }
+}
